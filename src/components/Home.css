@@ -1,0 +1,129 @@
+.home {
+  animation: fadeIn 0.4s ease;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 3rem 0 3.5rem;
+}
+
+.home-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.home-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+.home-title span {
+  background: linear-gradient(135deg, var(--accent1), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-subtitle {
+  color: var(--muted);
+  font-size: 0.9rem;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.demo-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.demo-card-home {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 1.75rem;
+  height: 100%;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-card-home::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--card-color);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.demo-card-home:hover {
+  transform: translateY(-4px);
+  border-color: var(--card-color);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
+
+.demo-card-home:hover::before {
+  opacity: 1;
+}
+
+.demo-card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.demo-card-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--card-color);
+  margin-bottom: 0.5rem;
+}
+
+.demo-card-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.demo-card-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.demo-card-arrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--card-color);
+  letter-spacing: 0.05em;
+}
+
+.home-footer-note {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+}
